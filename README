@@ -35,60 +35,52 @@ On Ubuntu Linux:
 3. Open the folder with copied repository and execute cmake
 	Execute the following command to get into the directory with copied repository
 	$ cd intrinsiccoin
-      $ mkdir build
-      $ cd build
-      $ cmake ..
+       $ mkdir build
+       $ cd build
+       $ cmake ..
 
 
 4. Build the executables
 	Execute the following command to build a coin
-	                 $ make 
+	$ make 
 
-Advanced options:
-Parallel build: run `make -j<number of threads>' instead of `make' depending on the number of cores you would like to use to speeden up the process . Ex. make -j4
+        Advanced options:
+        Parallel build: run `make -j<number of threads>' instead of `make' depending on the number of cores you would like to use to speeden up the process . Ex. make -j4
+	The resulting executables can be found in Build\src\Release.
+	Advanced options:
+                Parallel build: run `make -j<number of threads>' instead of `make'.
+                Debug build: run `make build-debug'.
+                Test suite: run `make test-release' to run tests in addition to building. Running `make test-debug' will do the same to the debug version.
+                Building with Clang: it may be possible to use Clang instead of GCC, but this may not work everywhere. To build, run `export CC=clang CXX=clang++' before running `make'.
 
-		The resulting executables can be found in Build\src\Release.
-		Advanced options:
-Parallel build: run `make -j<number of threads>' instead of `make'.
-Debug build: run `make build-debug'.
-Test suite: run `make test-release' to run tests in addition to building. Running `make test-debug' will do the same to the debug version.
-Building with Clang: it may be possible to use Clang instead of GCC, but this may not work everywhere. To build, run `export CC=clang CXX=clang++' before running `make'.
-
-You should see the following files created 
+        You should see the following files created 
 
 
 
 On Windows: 
 
 1. Clone this repository
-Execute the following command to copy this repository on your computer using Git Bash or regular windows command prompt
+        Execute the following command to copy this repository on your computer using Git Bash or regular windows command prompt
 	$ git https://github.com/intrinsiccoin/intrinsiccoin.git
-	2. Use CMake to create your MSVC 2017 Project. 
-To build, change to a directory where this file is located, and run this commands: 
-$ mkdir build
-$ cd build
-$ cmake -G "Visual Studio 15 Win64" ..
+2. Use CMake to create your MSVC 2017 Project. 
+        To build, change to a directory where this file is located, and run this commands: 
+        $ mkdir build
+        $ cd build
+        $ cmake -G "Visual Studio 15 Win64" ..
 
-Alternately, you could use Cmake GUI
+        Alternately, you could use Cmake GUI
 
-a. Browse the source folder and select build folder.
-b. Step 1, click 'Configure', change options if you like, below in the image, I modified CMAKE_CONFIGURATION_TYPES to only select 'Release'.
-c. Step 2, click 'Generate' to create intrinsiccoin.sln project in the 'Build' folder below.
-
-
+        a. Browse the source folder and select build folder.
+        b. Step 1, click 'Configure', change options if you like, below in the image, I modified CMAKE_CONFIGURATION_TYPES to only select 'Release'.
+        c. Step 2, click 'Generate' to create intrinsiccoin.sln project in the 'Build' folder.
 
 2. Build your executables in  MSVC 2017 Project. 
 
-d. Step 3, click 'Open Project' and once the project is loaded click 'Build Solution' in the 'Build' menu. 
+        d. Step 3, click 'Open Project' and once the project is loaded click 'Build Solution' in the 'Build' menu. 
 
+        Your four executables should be created in \Build\src\Release folder. ie intrinsiccoind.exe, miner.exe, simplewallet.exe and walletd.exe.
 
-
-
-
-		Your four executables should be created in \Build\src\Release folder. ie intrinsiccoind.exe, miner.exe, simplewallet.exe and walletd.exe.
-
-
-You can first launch the intrinsccoind.exe daemon and then the simplewallet.exe CLI wallet
+        You can first launch the intrinsccoind.exe daemon and then the simplewallet.exe CLI wallet
 
 Good luck!
 

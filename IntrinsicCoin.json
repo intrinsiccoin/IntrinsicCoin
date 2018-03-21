@@ -1,0 +1,67 @@
+
+{
+    "base_coin": {
+        "name": "bytecoin",
+        "git": "https://github.com/amjuarez/bytecoin.git"
+    },
+    "core": {
+        "SEED_NODES": [
+            "192.168.1.158:35353",
+            "192.168.1.177:35353"
+        ],
+        "EMISSION_SPEED_FACTOR": 18,
+        "DIFFICULTY_TARGET": 120,
+        "CRYPTONOTE_DISPLAY_DECIMAL_POINT": 12,
+        "MONEY_SUPPLY": "18000000073709551615",
+        "GENESIS_BLOCK_REWARD": "4500000018427387400",
+        "DEFAULT_DUST_THRESHOLD": 1000000,
+        "MINIMUM_FEE": 1000000,
+        "CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW": 10,
+        "CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE": 100000,
+        "MAX_TRANSACTION_SIZE_LIMIT": 100000,
+        "CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX": 55,
+        "DIFFICULTY_CUT_V1": 60,
+        "DIFFICULTY_CUT_V2": 60,
+        "DIFFICULTY_CUT": 0,
+        "DIFFICULTY_LAG_V1": 15,
+        "DIFFICULTY_LAG_V2": 15,
+        "DIFFICULTY_LAG": 0,
+        "DIFFICULTY_WINDOW_V1": 720,
+        "DIFFICULTY_WINDOW_V2": 720,
+        "DIFFICULTY_WINDOW": 17,
+        "ZAWY_DIFFICULTY_BLOCK_INDEX": 30,
+        "P2P_DEFAULT_PORT": 35353,
+        "RPC_DEFAULT_PORT": 35354,
+        "BYTECOIN_NETWORK": "3ca55d94-c214-1344-ed34-c39c53a8b900",
+        "CRYPTONOTE_NAME": "intrinsiccoin",
+        "DAEMON_NAME": "intrinsiccoind",
+        "GENESIS_COINBASE_TX_HEX": "010a01ff000188bcf6dccbc5cdb93e0249feddcb266df8cb178e5a563995b3a8cd97c14ca5c71bbf50503333a37eb1fa2101da4f961bf9b21bb7aeea244f979a845b50b57c8afe8e1ec1ad32365cd1bbee98",
+        "CHECKPOINTS": "",
+        "MAX_BLOCK_SIZE_INITIAL": 100000
+    },
+    "extensions": [
+        "core/bytecoin.json",
+        "bug-fixes.json",
+        "print-genesis-tx.json",
+        "simplewallet-default-fee.json",
+        "max-transaction-size-limit.json",
+        "min-mixin.json",
+        "mixin-start-height.json",
+        "mandatory-transaction-in-block.json",
+        "kill-height.json",
+        "tail-emission-reward.json",
+        "versionized-parameters.json",
+        "zawy-difficulty-algorithm.json",
+        "genesis-block-reward.json",
+        "blockchain-explorer.json",
+        "enable-cors.json",
+        "fee-address.json",
+        "speed-up-wallet-sync.json",
+        "walletd-spent-transfers-tracking-mode.json",
+        "simplewallet-import-keys.json",
+        "simplewallet-export-keys.json",
+        "walletd-extension.json",
+        "mnemonics.json"
+ 
+    ]
+}
